@@ -21,15 +21,15 @@
             "routes" => array(
                 "/management\/.*/i" => "viewDefault"
             )
-		),
-		"content" => array(
-			"directory" => "content",
-			"url_match" => "/^(?!MODULES).*/i",
-			"auth_required" => false,
-            "routes" => array(
-                "/.*/i" => "viewIndex"
-            )
 		)
+//		"content" => array(
+//			"directory" => "content",
+//			"url_match" => "/^(?!MODULES).*/i",
+//			"auth_required" => false,
+//            "routes" => array(
+//                "/.*/i" => "viewIndex"
+//            )
+//		)
 	);
 
 	require_once('modules/database/database.php');	
