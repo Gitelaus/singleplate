@@ -1,0 +1,7 @@
+ErrorDocument 401 /err.txt
+ErrorDocument 403 /err.txt
+RewriteEngine on
+RewriteCond %{REQUEST_URI} !(\.css|\.js|\.png|\.jpg|\.gif|robots\.txt)$ [NC]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ /index.php?path=$1&%{QUERY_STRING} [NC,L,QSA]

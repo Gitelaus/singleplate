@@ -1,0 +1,37 @@
+.section-login {
+  width: 300px;
+  padding: 20px 100px;
+  margin: 0 auto;
+  background: rgba(0, 0, 0, 0.95);
+  transform: translate(-50%, -50%);
+  position: absolute;
+  top: 50%;
+  left: 50%; }
+
+.form-element {
+  position: relative;
+  width: 100%; }
+  .form-element label {
+    position: absolute;
+    left: 0;
+    top: 0px;
+    padding: 5px 0px;
+    color: white; }
+  .form-element input[type='text'], .form-element input[type='password'] {
+    display: block;
+    width: 85%;
+    margin: 0 auto;
+    padding: 10px 0px;
+    padding-left: 70px;
+    border: none;
+    border-bottom: 1px solid white;
+    margin: 5px 0px;
+    background: none;
+    color: white;
+    outline: none; }
+  .form-element ::-webkit-input-placeholder {
+    color: white; }
+  .form-element input[type='submit'] {
+    display: block;
+    width: 200px;
+    margin: 0 auto; }
